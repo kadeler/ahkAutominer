@@ -2,8 +2,8 @@
 
 FileAppend, [Автопилот] Выбран режим с открытым окном`n, logs.txt
 SetTitleMatchMode, 2
-ControlClick x960 y540,Minecraft 1.7.10,,LEFT,,D
-ControlSend, , {w down},Minecraft 1.7.10
+ControlClick x960 y540,|  McSkill  |,,LEFT,,D
+ControlSend, , {w down},|  McSkill  |
 
 loop{
 	Random, randoption, 1, 100
@@ -54,6 +54,6 @@ loop{
 
 ~F12::
 FileAppend, [Автопилот] Нажата F12`, завершаю работу`n, logs.txt
-ControlClick x960 y540,Minecraft 1.7.10,,LEFT
-ControlSend, , {w up},Minecraft 1.7.10
+ControlClick x960 y540,|  McSkill  |,,LEFT
+ControlSend, , {w up},|  McSkill  |
 exitapp

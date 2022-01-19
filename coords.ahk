@@ -33,8 +33,8 @@ else if (afk="Открытое окно"){
             StringReplace, y, ystr, %A_Space%
             StringReplace, z, zstr, %A_Space%
 
-            ControlClick x960 y540,Minecraft 1.7.10,,LEFT,,D
-            ControlSend, , {w down},Minecraft 1.7.10
+            ControlClick x960 y540,|  McSkill  |,,LEFT,,D
+            ControlSend, , {w down},|  McSkill  |
 
             if (x>5000 OR x<-5000) {
             x:=x/100000
@@ -50,18 +50,18 @@ else if (afk="Открытое окно"){
 
 			xq:=Mod(x, Round(x,0))
             if (xq < 0.25){
-                ControlSend, , {d down}{d up},Minecraft 1.7.10
+                ControlSend, , {d down}{d up},|  McSkill  |
             } 
             else if (xq > 0.75) {
-                ControlSend, , {a down}{a up},Minecraft 1.7.10
+                ControlSend, , {a down}{a up},|  McSkill  |
             }
 
             zq:=Mod(z, Round(z,0))
             if (zq < 0.25){
-                ControlSend, , {d down}{d up},Minecraft 1.7.10
+                ControlSend, , {d down}{d up},|  McSkill  |
             } 
             else if (zq > 0.75) {
-                ControlSend, , {a down}{a up},Minecraft 1.7.10
+                ControlSend, , {a down}{a up},|  McSkill  |
             }
 
         }
@@ -86,8 +86,8 @@ else if (afk="Открытое окно"){
             y:=y*10/10
             z:=z*10/10
 
-            ControlClick x960 y540,Minecraft 1.7.10,,LEFT,,D
-            ControlSend, , {w down},Minecraft 1.7.10
+            ControlClick x960 y540,|  McSkill  |,,LEFT,,D
+            ControlSend, , {w down},|  McSkill  |
 
             FileAppend, [Анализ координат] Анализ...`n, logs.txt
 
@@ -112,10 +112,10 @@ else if (afk="Открытое окно"){
 			
 			Random, randoption, 1, 100
 			if (randoption<25){
-				ControlSend, , {d down}{d up},Minecraft 1.7.10
+				ControlSend, , {d down}{d up},|  McSkill  |
 			}
 			else if (randoption>75){
-				ControlSend, , {a down}{a up},Minecraft 1.7.10
+				ControlSend, , {a down}{a up},|  McSkill  |
 			}
 			else{
 				randoption:=randoption

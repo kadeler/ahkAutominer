@@ -1,5 +1,5 @@
 ﻿#singleinstance force
-#ifwinActive Minecraft 1.7.10
+#ifwinActive |  McSkill  |
 IniRead, tool1, config.ini, startoptions, tool1
 IniRead, tool2, config.ini, startoptions, tool2
 IniRead, tool3, config.ini, startoptions, tool3
@@ -24,7 +24,7 @@ else if (afk="Открытое окно"){
         FileAppend, [Анализ препятствий] Будет работать только клик ПКМ чтобы не застревать в блоках`n, logs.txt
         Loop{
             sleep 5000
-            ControlClick x960 y540,Minecraft 1.7.10,,Right
+            ControlClick x960 y540,|  McSkill  |,,Right
         }
     }
     else if (tool2="Ваджра"){
@@ -78,56 +78,56 @@ else if (afk="Открытое окно"){
     
     if (pos1=0x79553A && pos2=0x966C4A && pos3=0x76553B or pos3=0x75543A && pos4=0x271A12){
         FileAppend, [Анализ препятствий] Обнаружена земля`n, logs.txt
-        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},Minecraft 1.7.10
+        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},|  McSkill  |
     }
     
     else if (pos1=0x5A5854 && pos2=0x595753 && pos3=0x525050 or pos3=0x525151 && pos4=0x323130 or pos4=0x313130){
         FileAppend, [Анализ препятствий] Обнаружен гравий`n, logs.txt
-        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},Minecraft 1.7.10
+        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},|  McSkill  |
     }
     
     else if (pos1=0xDDD7A0 && pos2=0xD8D29A && pos3=0x86825E && pos4=0x605D46){
         FileAppend, [Анализ препятствий] Обнаружен песок`n, logs.txt
-        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},Minecraft 1.7.10
+        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},|  McSkill  |
     }
     
     else if (pos9=0xAA5920 && pos10=0xA75920 && pos11=0x693514 && pos12=0x4A270F){
         FileAppend, [Анализ препятствий] Обнаружен красный песок`n, logs.txt
-        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},Minecraft 1.7.10
+        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},|  McSkill  |
     }
     
     else if (pos5=0x619454 && pos6=0x5A894E && pos7=0x76553B && pos8=0x271A12){
         FileAppend, [Анализ препятствий] Обнаружена трава`n, logs.txt
-        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},Minecraft 1.7.10
+        ControlSend, , {%keyfordirt% down}{%keyfordirt% up},|  McSkill  |
     }
     
     else if (pos9=0x735E39 && pos10=0x735E39 && pos11=0x655431 && pos12=0x52422B){
         FileAppend, [Анализ препятствий] Обнаружен доска`n, logs.txt
-        ControlSend, , {%keyfordungeon% down}{%keyfordungeon% up},Minecraft 1.7.10
+        ControlSend, , {%keyfordungeon% down}{%keyfordungeon% up},|  McSkill  |
     }
     
     else if (pos13=0xDDDDDD && pos14=0xEDEDED && pos3=0xDDDDDD && pos4=0xCECECE){
         FileAppend, [Анализ препятствий] Обнаружена паутина`n, logs.txt
-        ControlSend, , {%keyforcobweb% down}{%keyforcobweb% up},Minecraft 1.7.10
+        ControlSend, , {%keyforcobweb% down}{%keyforcobweb% up},|  McSkill  |
     }
     
     else if (pos15=0xBC9862 && pos2=0x52422B && pos16=0x4E3F27 && pos4=0x52422B){
         FileAppend, [Анализ препятствий] Обнаружен забор`n, logs.txt
-        ControlSend, , {%keyfordungeon% down}{%keyfordungeon% up},Minecraft 1.7.10
+        ControlSend, , {%keyfordungeon% down}{%keyfordungeon% up},|  McSkill  |
     }
     
     else if (pos17=0x121212 && pos18=0x121212 && pos19=0x080909 && pos20=0x0A0B0B){
         if (pos21=0x09090A && pos22=0x0D0D0D && pos23=0x070808 && pos24=0x0E0E0E){
             FileAppend, [Анализ препятствий] Игрок застрял в гравии`n, logs.txt
-            ControlSend, , {1 up},Minecraft 1.7.10
-            ControlSend, , {%keyfordirt% down}{%keyfordirt% up},Minecraft 1.7.10
+            ControlSend, , {1 up},|  McSkill  |
+            ControlSend, , {%keyfordirt% down}{%keyfordirt% up},|  McSkill  |
         }
     }
     
     else{
         FileAppend, [Анализ препятствий] Препятствий не обнаружено`n, logs.txt
-        ControlSend, , {1},Minecraft 1.7.10
-        ControlClick x960 y540,Minecraft 1.7.10,,Right
+        ControlSend, , {1},|  McSkill  |
+        ControlClick x960 y540,|  McSkill  |,,Right
     }
 }
 }
